@@ -101,7 +101,7 @@ html {
 }
 
 .cartImg:hover {
-    background-color: hsl(212, 21%, 14%);
+    background-color: hsl(176, 35%, 25%);
 }
 
 .container .cartImg img {
@@ -127,3 +127,22 @@ html {
     font-size: 0.75rem;
     text-align: center;
 }
+
+@media (max-width: 800px) {
+    body {
+      height: 100vh;
+      position: absolute;
+    }
+  
+    .container {
+    background-image: url("./images/image-product-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    width: 50%;
+    height: 750px;
+    }
+
+    .product {
+    }
+  }

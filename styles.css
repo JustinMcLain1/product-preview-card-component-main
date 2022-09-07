@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:wght@500;0,700;1,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?FrauncesLwght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
 * {
     margin: 0;
     padding: 0;
@@ -26,13 +26,13 @@ html {
     background-color: white;
     position: absolute;
     border-radius: 10px;
+    margin-top: 7.5rem;
     width: 650px;
     height: 450px;
     background-image: url("./images/image-product-desktop.jpg");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 50%;
-    z-index: 0;
 }
 
 .container .product {
@@ -66,6 +66,7 @@ html {
 }
 .container #discountPrice {
     font-family: "Fraunces";
+    font-weight: 700;
     font-size: 36px;
     color: hsl(158, 36%, 37%);
     padding-top: 20px;
@@ -73,13 +74,14 @@ html {
 }
 
 .container #originalPrice {
-    float: left;
+    float: right;
     font-family: "Fraunces";
-    font-size: 12px;
+    font-size: 14px;
     color: hsl(158, 36%, 37%);
-    padding-top: 20px;
-    padding-left: 55%;
+    padding-top: 30px;
+    margin-right: 75px;
     text-decoration: line-through;
+    padding-bottom: 3rem;
 }
 
 .container .cartImg {
@@ -96,6 +98,10 @@ html {
     margin-left: 55%;
     border-radius: 10px;
     height: 60px;
+}
+
+.cartImg:hover {
+    background-color: hsl(212, 21%, 14%);
 }
 
 .container .cartImg img {
@@ -115,7 +121,9 @@ html {
 
 .attribution {
     align-items: center;
-    justify-content: flex-end;
-    margin-top: 50vh;
-    margin-left: 10vh;
+    position: fixed;
+    bottom: 1%;
+    width: 100%;
+    font-size: 0.75rem;
+    text-align: center;
 }
